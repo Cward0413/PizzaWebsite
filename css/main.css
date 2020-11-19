@@ -1,0 +1,180 @@
+nav{
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+body{
+    background-image: url('../resources/pizzaBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+legend{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: left;
+}
+label{
+    margin-left: auto;
+}
+.container{
+    margin-top: 10%;
+    width: 75%;
+}
+.nav-link{
+    background-color: #cfcfcf;
+}
+.nav-tabs > li > a:hover{
+    background-color: #b3b3b3;
+}
+.tabHeader{
+    margin-left: 25px;
+}
+.orderSet{
+    height: 100%;
+}
+.breadOrderFields{
+    width: 50%;
+}
+.borderRight{
+    border-right-width: thin;
+    border-right-color: black;
+    border-right-style: solid;
+}
+.breadCol{
+    display: block;
+    float: none;
+    margin-left: 25%;
+    text-align: left;
+    margin-top: 3px;
+    width: 100%;
+}
+.meatCol{
+    display: block;
+    float: none;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 8px;
+}
+.vegCol{
+    display: block;
+    float: none;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 8px;
+}
+.delivery{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.contact{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 75%;
+}
+.city{
+    margin-right: 5%;
+}
+.state{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.streetLabel{
+    margin-left: 100px;
+}
+.streetInput{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.phoneInput{
+    margin-left: 0px;
+}
+.configConf{
+    display: inline;
+    margin-top: 25px;
+    margin-left: 75px;
+    margin-right: auto;
+}
+.orderConf{
+    display: inline;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: 100px;
+}
+.deliveryConf{
+    display: inline;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 25px;
+ }
+.reviewArea{
+    height: 400px;
+}
+.reviewLabel{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+.configLabel{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+.reviewText{
+    padding-left: 25px;
+}
+table{
+    border-width: thin;
+    border-color: #b3b3b3;
+    border-style: solid;
+}
+#pageTitle{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: x-large;
+    height: 75px;
+    background-color: white;
+}
+#pizzaForm{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 75%;
+}
+#next{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+#state{
+    height: 40px;
+}
+#back{
+     display: block;
+     text-align: center;
+     margin-left: 25px;
+     margin-right: auto;
+     margin-top: 20px;
+ }
+#submit{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+

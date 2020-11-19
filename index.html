@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<div id="pageTitle">
+    <H1>Conor's Mostly Authentic Pizza</H1>
+</div>
+<div class="container">
+    <nav>
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" href="#picker" id="pickerNav">Order</a></li>
+            <li class="nav-item"><a class="nav-link" href="#delivery" id="deliveryNav">Delivery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#review" id="reviewNav">Review</a></li>
+        </ul>
+    </nav>
+    <div id="pizzaForm">
+        <div class="tab-content">
+                <div id="picker" class="tab-pane active">
+                    <div class="row">
+                        <h2 class="tabHeader">Make your pizza</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col borderRight">
+                                <fieldset class="breadOrderFields">
+                                    <legend>Size:</legend>
+                                    <div class="breadCol">
+                                        <label class="orderField" for="small"><input class="orderInput" type="radio" id="small" name="size" value="small"> Small</label>
+                                    </div>
+                                    <div class="breadCol">
+                                        <label class="orderField" for="normal"><input class="orderInput" type="radio" id="normal" name="size" value="normal" checked="checked"> Normal</label>
+                                    </div>
+                                    <div class="breadCol">
+                                        <label class="orderField" for="large"><input class="orderInput" type="radio" id="large" name="size" value="large"> Large</label>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="breadOrderFields">
+                                    <legend>Crust Type:</legend>
+                                    <div class="breadCol">
+                                        <label class="orderField" for="thin"><input class="orderInput" type="radio" id="thin" name="crust" value="thin" checked="checked"> Thin</label>
+                                    </div>
+                                    <div class="breadCol">
+                                        <label class="orderField" for="pan"><input class="orderInput" type="radio" id="pan" name="crust" value="pan"> Pan</label>
+                                    </div>
+                                    <div class="breadCol">
+                                        <label class="orderField" for="glutenfree"><input class="orderInput" type="radio" id="glutenfree" name="crust" value="gluten free"> Gluten Free</label>
+                                    </div>
+                                </fieldset>
+                        </div>
+                        <div class="col borderRight">
+                            <fieldset class="orderSet">
+                                <legend>Meat ($1.5/per):</legend>
+                                <div class="meatCol">
+                                    <label class="orderField" for="pepperoni"><input class="orderInput" type="checkbox" id="pepperoni" name="meat" value="Pepperoni"> Pepperoni</label>
+                                </div>
+                                <div class="meatCol">
+                                    <label class="orderField" for="salami"><input class="orderInput" type="checkbox" id="salami" name="meat" value="Salami"> Salami</label>
+                                </div>
+                                <div class="meatCol">
+                                    <label class="orderField" for="beef"><input class="orderInput" type="checkbox" id="beef" name="meat" value="Beef"> Beef</label>
+                                </div>
+                                <div class="meatCol">
+                                    <label class="orderField" for="ham"><input class="orderInput" type="checkbox" id="ham" name="meat" value="Ham"> Ham</label>
+                                </div>
+                                <div class="meatCol">
+                                    <label class="orderField" for="bacon"><input class="orderInput" type="checkbox" id="bacon" name="meat" value="Bacon"> Bacon</label>
+                                </div>
+                                <div class="meatCol">
+                                    <label class="orderField" for="sausage"><input class="orderInput" type="checkbox" id="sausage" name="meat" value="Italian Sausage"> Italian Sausage</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col">
+                            <fieldset class="orderSet">
+                                <legend>Veggie ($1/per):</legend>
+                                <div class="vegCol">
+                                    <label class="orderField" for="onions"><input class="orderInput" type="checkbox" id="onions" name="veggies" value="Onions"> Onions</label>
+                                </div>
+                                <div class="vegCol">
+                                    <label class="orderField" for="mushrooms"><input class="orderInput" type="checkbox" id="mushrooms" name="veggies" value="Mushrooms"> Mushrooms</label>
+                                </div>
+                                <div class="vegCol">
+                                    <label class="orderField" for="peppers"><input class="orderInput" type="checkbox" id="peppers" name="veggies" value="Peppers"> Peppers</label>
+                                </div>
+                                <div class="vegCol">
+                                    <label class="orderField" for="olives"><input class="orderInput" type="checkbox" id="olives" name="veggies" value="Olives"> Black Olives</label>
+                                </div>
+                                <div class="vegCol">
+                                    <label class="orderField" for="tomatoes"><input class="orderInput" type="checkbox" id="tomatoes" name="veggies" value="Tomatoes"> Diced Tomatoes</label>
+                                </div>
+                                <div class="vegCol">
+                                    <label class="orderField" for="pineapple"><input class="orderInput" type="checkbox" id="pineapple" name="veggies" value="Pineapple"> Pineapple</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="nextButton">
+                        <button class="btn btn-primary" id="next" type="button">Next</button>
+                    </div>
+                </div>
+                <div id="delivery" class="tab-pane">
+                    <div id="deliveryContainer">
+                        <div class="row">
+                            <h2 class="tabHeader">Enter your delivery info</h2>
+                        </div>
+                        <fieldset>
+                            <div class="row">
+                                <div class="col">
+                                        <label class="streetLabel" for="streetOne">Street Line 1</label>
+                                        <input class="form-control streetInput" type="text" id="streetOne" name="delivery">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="streetLabel" for="streetTwo">Street Line 2</label>
+                                    <input class="form-control streetInput" type="text" id="streetTwo" name="delivery">
+                                </div>
+                            </div>
+                            <div class="row delivery">
+                                <div class="col-sm-">
+                                    <label for="city">City</label>
+                                    <input class="form-control street" type="text" id="city" name="delivery">
+                                </div>
+                                <div class="col-sm- state">
+                                    <label for="state">State</label>
+                                    <select class="form-control" id="state" name="delivery">
+                                        <option value="AL">AL</option>
+                                        <option value="AK">AK</option>
+                                        <option value="AZ">AZ</option>
+                                        <option value="AR">AR</option>
+                                        <option value="CA">CA</option>
+                                        <option value="CO">CO</option>
+                                        <option value="CT">CT</option>
+                                        <option value="DE">DE</option>
+                                        <option value="FL">FL</option>
+                                        <option value="GA">GA</option>
+                                        <option value="HI">HI</option>
+                                        <option value="ID">ID</option>
+                                        <option value="IL">IL</option>
+                                        <option value="IN">IN</option>
+                                        <option value="IA">IA</option>
+                                        <option value="KS">KS</option>
+                                        <option value="KY">KY</option>
+                                        <option value="LA">LA</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MD">MD</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MI">MI</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MO">MO</option>
+                                        <option value="MT">MT</option>
+                                        <option value="NE">NE</option>
+                                        <option value="NV">NV</option>
+                                        <option value="NH">NH</option>
+                                        <option value="NJ">NJ</option>
+                                        <option value="NM">NM</option>
+                                        <option value="NY">NY</option>
+                                        <option value="NC">NC</option>
+                                        <option value="ND">ND</option>
+                                        <option value="OH">OH</option>
+                                        <option value="OK">OK</option>
+                                        <option value="OR">OR</option>
+                                        <option value="PA">PA</option>
+                                        <option value="RI">RI</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SD">SD</option>
+                                        <option value="TN">TN</option>
+                                        <option value="TX">TX</option>
+                                        <option value="UT">UT</option>
+                                        <option value="VT">VT</option>
+                                        <option value="WA">WA</option>
+                                        <option value="WV">WV</option>
+                                        <option value="WI">WI</option>
+                                        <option value="WY">WY</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm- zipcode">
+                                    <label for="zipcode">Zipcode</label>
+                                    <input class="form-control" type="text" id="zipcode" name="delivery">
+                                </div>
+                            </div>
+                            <div class="row contact">
+                                <div class="col">
+                                    <label for="phonenumber" class="phoneLabel">PhoneNumber</label>
+                                    <input class="form-control phoneInput" type="number" id="phonenumber" name="delivery">
+                                </div>
+                                <div class="col">
+                                    <label for="email">Email</label>
+                                    <input class="form-control" type="text" id="email" name="delivery">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <button class="btn btn-primary" id="back" type="button">Back</button>
+                                </div>
+                                <div class="col-sm">
+                                    <button class="btn btn-primary" id="submit" type="button">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="review" class="tab-pane">
+                    <div></div>
+                        <div class="row" id="reviewContainter">
+                            <h2 class="tabHeader">Review Your Order</h2>
+                        </div>
+
+                        <div class="row reviewArea">
+                            <div class="col configConf">
+                                <div class="row">
+                                    <p class="configLabel">Size:</p>
+                                </div>
+                                <div class="row">
+                                        <p><span class="reviewText" id="sizeOutput"></span></p>
+                                </div>
+                                <div class="row">
+                                    <p class="configLabel">Crust:</p>
+                                </div>
+                                <div class="row">
+                                        <span class="reviewText" id="crustOutput"></span>
+                                </div>
+                                <div class="row">
+                                    <p class="configLabel">Meat:</p>
+                                </div>
+                                <div class="row">
+                                        <span class="reviewText" id="meatOutput"></span>
+                                </div>
+                                <div class="row">
+                                    <p class="configLabel">Veggies:</p>
+                                </div>
+                                <div class="row">
+                                        <span class="reviewText" id="veggieOutput"></span>
+                                </div>
+
+                            </div>
+                            <div class="col orderConf">
+                                <table class="table" id="receipt">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Item</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><span id="pizzaOutput"></span></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span id="pizzaPrice"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span id="meatNumber"></span></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span id="meatPrice"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span id="veggieNumber"></span></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span id="veggiePrice"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Total:</td>
+                                        <td></td>
+                                        <td><p><span id="totalPrice"></span></p></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col deliveryConf">
+                                <div class="row">
+                                        <p class="reviewLabel">Delivery Address:</p>
+                                </div>
+                                <div class="row">
+                                        <span class="reviewText" id="addressOutput"></span>
+                                </div>
+                                <div class="row">
+                                        <span class="reviewText" id="addressTwoOutput"></span>
+                                </div>
+                                <div class="row">
+                                        <p class="reviewText"><span id="cityOutput"></span> <span id="stateOutput"></span>, <span id="zipOutput"></span></p>
+                                </div>
+                                <div class="row">
+                                        <p class="reviewLabel">Phone Number:</p>
+                                </div>
+                                <div class="row">
+                                    <span class="reviewText" id="phoneOutput"></span>
+                                </div>
+                                <div class="row">
+                                        <p class="reviewLabel">Email Address:</p>
+                                </div>
+                                <div class="row">
+                                    <span class="reviewText" id="emailOutput"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<footer>
+
+</footer>
+</html>
